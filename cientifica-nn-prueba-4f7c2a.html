@@ -167,6 +167,10 @@
             <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
 
 <style>
+  /* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */
+.nn-comments {
+  display: none !important;
+}
 .nn-scientist-game {
   --nn-red: #b81424;
   --nn-text: #1f2937;
@@ -245,12 +249,54 @@
   background: var(--nn-absent);
 }
 
+.nn-scientist-napkin {
+  position: relative;
+  width: min(100%, 720px);
+  margin: 4px auto 28px;
+  padding: 34px 26px;
+
+  /* Papel ligeramente marfil */
+  background-color: #faf8f0;
+
+  /* Textura muy suave de papel */
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(70, 60, 40, .035) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 73% 61%, rgba(70, 60, 40, .025) 0 1px, transparent 1.5px),
+    linear-gradient(96deg, transparent 48%, rgba(120, 110, 90, .025) 50%, transparent 52%),
+    linear-gradient(4deg, transparent 48%, rgba(120, 110, 90, .02) 50%, transparent 52%);
+
+  background-size:
+    19px 17px,
+    23px 21px,
+    160px 140px,
+    190px 170px;
+
+  border: 1px solid rgba(110, 100, 80, .15);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, .08),
+    0 2px 5px rgba(0, 0, 0, .05);
+
+  transform: rotate(-0.18deg);
+}
+
+.nn-scientist-napkin::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  pointer-events: none;
+  border: 1px solid rgba(100, 90, 70, .055);
+  transform: rotate(.22deg);
+}
+
 .nn-scientist-board {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
-  margin: 0 auto 22px;
+  margin: 0 auto;
 }
 
 .nn-scientist-row {
@@ -279,29 +325,74 @@
 }
 
 .nn-scientist-cell {
+  position: relative;
+
   width: var(--cell-size, 44px);
   height: var(--cell-size, 44px);
   min-width: 0;
-  border: 2px solid var(--nn-border);
-  border-radius: 4px;
+
+  border: 0;
+  border-radius: 2px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  color: var(--nn-text);
+
+  /* La servilleta se ve a través */
+  background: transparent;
+
+  /* Azul de boli */
+  color: #244b78;
+
   font-size: clamp(.82rem, 3vw, 1.25rem);
   line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
+
   transition:
     transform .15s ease,
     background .2s ease,
-    border-color .2s ease,
     color .2s ease;
 }
 
+/*
+ * Contorno irregular dibujado a boli.
+ * No es un simple border:dashed: el trazado del <span class="caps">SVG</span>
+ * tiene pequeñas irregularidades.
+ */
+.nn-scientist-cell::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M7 8 C29 5 67 8 94 6 M94 6 C97 31 92 66 94 94 M94 94 C66 97 32 92 6 95 M6 95 C4 68 9 34 7 8' fill='none' stroke='%23244b78' stroke-width='3' stroke-linecap='round' stroke-dasharray='9 5 4 6 7 4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  opacity: .88;
+}
+
+/* Cada cuadrado está un poquito distinto */
+.nn-scientist-cell:nth-child(4n + 1) {
+  transform: rotate(-0.65deg);
+}
+
+.nn-scientist-cell:nth-child(4n + 2) {
+  transform: rotate(0.45deg);
+}
+
+.nn-scientist-cell:nth-child(4n + 3) {
+  transform: rotate(-0.25deg);
+}
+
+.nn-scientist-cell:nth-child(4n) {
+  transform: rotate(0.7deg);
+}
+
 .nn-scientist-cell.filled {
-  border-color: #9aa3ad;
+  color: #18395f;
 }
 
 .nn-scientist-cell.correct,
@@ -322,7 +413,11 @@
 .nn-scientist-cell.absent {
   background: var(--nn-absent);
 }
-
+.nn-scientist-cell.correct::before,
+.nn-scientist-cell.present::before,
+.nn-scientist-cell.absent::before {
+  opacity: .25;
+}
 .nn-scientist-cell.reveal {
   animation: nnScientistFlip .36s ease;
 }
@@ -480,7 +575,9 @@
   .nn-scientist-row {
     gap: 5px;
   }
-
+.nn-scientist-napkin {
+  padding: 26px 10px;
+}
   .nn-scientist-word {
     gap: 2px;
   }
@@ -537,8 +634,13 @@
     </span>
   </div>
 
-  <div class="nn-scientist-board" id="nnScientistBoard" aria-label="Tablero de cinco intentos"></div>
-
+<div class="nn-scientist-napkin">
+  <div
+    class="nn-scientist-board"
+    id="nnScientistBoard"
+    aria-label="Tablero de cinco intentos">
+  </div>
+</div>
   <form class="nn-scientist-form" id="nnScientistForm" novalidate>
     <label class="nn-scientist-label" for="nnScientistGuess">Escribe tu intento</label>
     <div class="nn-scientist-input-row">
