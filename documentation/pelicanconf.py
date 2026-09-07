@@ -204,7 +204,7 @@ AUTHORS = {
     },
     "Gretel Quintero Angulo": {
         "url": "https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de",
-        "role": "Editora jefa",
+        "role": "Editora Jefa",
         "blurb": "Gretel observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano. Es doctora en física, pero su curiosidad no se restringe a la ciencia: aspira a un conocimiento más amplio, construido desde la complementariedad y las relaciones entre distintas ramas del saber, donde las disciplinas no se excluyen, sino que se iluminan entre sí. Su trabajo combina pensamiento crítico y voz propia, explorando las estructuras —visibles e invisibles— que moldean nuestras vidas.",
         "avatar": "images/gretel.png",
         "caricature": "images/gretel_caricatura.png",
@@ -212,7 +212,7 @@ AUTHORS = {
     },
     "David Figueruelo Hernán": {
         "url": "https://inspirehep.net/authors/1869776?ui-citation-summary=true",
-        "role": "Editor, Desarrollador Web",
+        "role": "Editor, Desarrollador Web Jefe",
         "blurb": "Doctor en cosmología que busca comprender el universo y el rol de la materia y energía oscuras en él. Interesado las ecuaciones y las preguntas fundamentales: qué significa entender en física y qué es  <strong>verdad</strong> al observar solo una fracción mínima del cosmos. Trabaja interpretando las pistas que el universo nos deja en forma de datos, intentando averiguar qué historias encajan con ellas y cuáles no. Financiación: Personal investigador doctor de la UPV/EHU (2024).",
         "avatar": "images/david.jpg",
         "caricature": "images/david_caricatura.png",
