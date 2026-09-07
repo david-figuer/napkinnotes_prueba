@@ -5,7 +5,6 @@ Status: hidden
 <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
 
 <style>
-  /* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */
 .nn-comments {
   display: none !important;
 }
@@ -158,10 +157,8 @@ Status: hidden
   align-items: center;
   justify-content: center;
 
-  /* La servilleta se ve a través */
   background: transparent;
 
-  /* Azul de boli */
   color: #244b78;
 
   font-size: clamp(.82rem, 3vw, 1.25rem);
@@ -175,12 +172,7 @@ Status: hidden
     color .2s ease;
 }
 
-/*
- * Contorno irregular dibujado a boli.
- * No es un simple border:dashed: el trazado del SVG
- * tiene pequeñas irregularidades.
- */
-/* Base del trazo de boli */
+
 .nn-scientist-cell::before {
   content: "";
   position: absolute;
@@ -195,7 +187,7 @@ Status: hidden
 }
 
 
-/* 8 cuadrados realmente distintos */
+
 
 .nn-sketch-0 {
   transform: rotate(-0.8deg);
@@ -575,11 +567,7 @@ Status: hidden
   const bio = document.getElementById("nnScientistBio");
   const more = document.getElementById("nnScientistMore");
 
-  /*
-   * Devuelve la fecha de calendario actual en Europe/Madrid.
-   * La convertimos a una fecha UTC "neutra" para hacer cálculos de días
-   * sin que los cambios de horario de verano alteren la semana.
-   */
+
   function getMadridCalendarDate() {
     const parts = new Intl.DateTimeFormat("en-GB", {
       timeZone: "Europe/Madrid",
@@ -603,11 +591,6 @@ Status: hidden
     ));
   }
 
-  /*
-   * Cada semana se identifica por su lunes, en formato YYYY-MM-DD.
-   * Por ejemplo, cualquier día entre el lunes 2026-09-07 y el domingo
-   * 2026-09-13 devuelve "2026-09-07".
-   */
   function getCurrentWeekMonday() {
     const date = getMadridCalendarDate();
     const day = date.getUTCDay();
@@ -655,7 +638,6 @@ Status: hidden
   });
   const answerLetters = answerWords.join("");
 
-  /* Cada lunes empieza una partida independiente. */
   const storageKey =
     "nn_scientist_" + weekStart + "_" + scientistKey;
 
