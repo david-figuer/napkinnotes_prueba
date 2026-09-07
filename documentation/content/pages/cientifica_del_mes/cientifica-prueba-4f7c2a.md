@@ -459,7 +459,9 @@ Status: hidden
   .nn-scientist-word {
     gap: 2px;
   }
-
+.nn-scientist-game {
+  overflow-x: hidden;
+}
   .nn-scientist-space {
     width: 5px;
     flex-basis: 5px;
