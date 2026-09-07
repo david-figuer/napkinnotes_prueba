@@ -1,15 +1,38 @@
 /*
- * Napkin Notes — Científica del mes
+ * Napkin Notes — Científica de la semana
  *
- * Cada entrada está asociada a un slug opaco que NO revela la respuesta.
- * El juego lee automáticamente el slug actual de la URL y carga la científica
- * correspondiente.
+ * Este archivo contiene:
  *
- * Para añadir otra científica basta con añadir una entrada nueva.
+ * 1. NN_SCIENTISTS
+ *    Base de datos de científicas disponibles.
+ *
+ * 2. NN_SCIENTIST_WEEKS
+ *    Calendario que indica qué científica corresponde
+ *    a cada semana.
+ *
+ * Cada fecha del calendario debe ser un LUNES.
+ * La científica seleccionada permanece activa desde ese
+ * lunes hasta el domingo siguiente, ambos incluidos.
+ *
+ * Para añadir una científica nueva:
+ *
+ *   1. Añadir una nueva entrada a NN_SCIENTISTS.
+ *   2. Asignarle un identificador interno, por ejemplo:
+ *        "sci-004"
+ *   3. Añadir el lunes correspondiente a
+ *      NN_SCIENTIST_WEEKS.
+ *
+ * Los identificadores sci-001, sci-002, etc. son solamente
+ * identificadores internos. No son URLs ni crean páginas.
  */
 
+
+/* =========================================================
+   BASE DE DATOS DE CIENTÍFICAS
+   ========================================================= */
+
 window.NN_SCIENTISTS = {
-  "cientifica-nn-prueba-4f7c2a": {
+  "sci-001": {
     answer: "PAZ ALBARES",
     fullName: "Paz Albares Vicente",
     image: "/images/paz.jpg",
@@ -17,7 +40,7 @@ window.NN_SCIENTISTS = {
     url: "/autor/paz-albares-vicente"
   },
 
-  "cientifica-nn-prueba-8d31b7": {
+  "sci-002": {
     answer: "MARÍA PÉREZ",
     fullName: "María Pérez Garrote",
     image: "/images/maria.jpeg",
@@ -25,11 +48,42 @@ window.NN_SCIENTISTS = {
     url: "/autor/maria-perez-garrote"
   },
 
-  "cientifica-nn-prueba-c2a96e": {
+  "sci-003": {
     answer: "GRETEL QUINTERO",
     fullName: "Gretel Quintero Angulo",
     image: "/images/gretel.png",
     bio: "Gretel observa el mundo con la precisión de quien ha sido educada en el método científico y la sensibilidad de quien encuentra en la escritura una forma de interpretar lo cotidiano. Es doctora en física, pero su curiosidad no se restringe a la ciencia: aspira a un conocimiento más amplio, construido desde la complementariedad y las relaciones entre distintas ramas del saber, donde las disciplinas no se excluyen, sino que se iluminan entre sí. Su trabajo combina pensamiento crítico y voz propia, explorando las estructuras —visibles e invisibles— que moldean nuestras vidas.",
     url: "/autor/gretel-quintero-angulo"
   }
+
+};
+
+
+/* =========================================================
+   CALENDARIO DE CIENTÍFICAS
+   =========================================================
+ *
+ * La fecha indicada es siempre el LUNES.
+ *
+ * Ejemplo:
+ *
+ * "2026-09-07": "sci-001"
+ *
+ * significa:
+ *
+ * lunes 7  → Paz
+ * martes 8 → Paz
+ * ...
+ * domingo 13 → Paz
+ *
+ * El lunes siguiente se carga automáticamente la entrada
+ * correspondiente a esa nueva semana.
+ */
+
+window.NN_SCIENTIST_WEEKS = {
+
+  "2026-09-07": "sci-001",  // Paz Albares
+  "2026-09-14": "sci-002",  // María Pérez
+  "2026-09-21": "sci-003"   // Gretel Quintero
+
 };
