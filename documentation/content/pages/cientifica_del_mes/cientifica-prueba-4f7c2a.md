@@ -493,7 +493,6 @@ Status: hidden
 
 <div class="nn-scientist-game" id="nnScientistGame">
   <div class="nn-scientist-intro">
-    <p class="nn-scientist-kicker"> Científica de la semana</p>
     <p><strong>Adivina el nombre de la científica.</strong></p>
     <p class="nn-scientist-rules" id="nnScientistRules"></p>
   </div>
