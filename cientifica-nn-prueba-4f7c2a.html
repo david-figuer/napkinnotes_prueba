@@ -251,14 +251,15 @@
 
 .nn-scientist-napkin {
   position: relative;
-  width: min(100%, 760px);
-  margin: 4px auto 28px;
 
-  /*
-   * Dejamos sitio arriba para el logo "<span class="caps">BAR</span> Napkin Notes"
-   * y abajo para "<span class="caps">GRACIAS</span> <span class="caps">POR</span> <span class="caps">SU</span> <span class="caps">VISITA</span>".
-   */
-  padding: 90px 40px 70px;
+  width: 120%;
+  max-width: 912px;
+  margin: 4px 0 28px;
+
+  left: 50%;
+  transform: translateX(-50%) rotate(-0.15deg);
+
+  padding: 108px 48px 84px;
 
   background-image:
     url("/pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg");
@@ -266,15 +267,8 @@
   background-position: center;
   background-size: 100% 100%;
 
-  /* La propia imagen ya incluye bordes, arrugas y sombras. */
   border: 0;
   box-shadow: none;
-
-  /*
-   * Una inclinación casi imperceptible ayuda a que
-   * siga pareciendo una servilleta apoyada sobre la mesa.
-   */
-  transform: rotate(-0.15deg);
 }
 
 .nn-scientist-board {
@@ -348,35 +342,92 @@
  * No es un simple border:dashed: el trazado del <span class="caps">SVG</span>
  * tiene pequeñas irregularidades.
  */
+/* Base del trazo de boli */
 .nn-scientist-cell::before {
   content: "";
   position: absolute;
-  inset: -2px;
+  inset: -3px;
   pointer-events: none;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M7 8 C29 5 67 8 94 6 M94 6 C97 31 92 66 94 94 M94 94 C66 97 32 92 6 95 M6 95 C4 68 9 34 7 8' fill='none' stroke='%23244b78' stroke-width='3' stroke-linecap='round' stroke-dasharray='9 5 4 6 7 4'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
 
-  opacity: .88;
+  opacity: .9;
 }
 
-/* Cada cuadrado está un poquito distinto */
-.nn-scientist-cell:nth-child(4n + 1) {
-  transform: rotate(-0.65deg);
+
+/* 8 cuadrados realmente distintos */
+
+.nn-sketch-0 {
+  transform: rotate(-0.8deg);
 }
 
-.nn-scientist-cell:nth-child(4n + 2) {
-  transform: rotate(0.45deg);
+.nn-sketch-0::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M6 9 C28 5 70 9 94 6 M94 6 C97 32 92 67 95 94 M95 94 C70 97 30 91 6 95 M6 95 C3 69 9 34 6 9' fill='none' stroke='%23244b78' stroke-width='3.2' stroke-linecap='round' stroke-dasharray='10 5 4 7 8 4'/%3E%3C/svg%3E");
 }
 
-.nn-scientist-cell:nth-child(4n + 3) {
-  transform: rotate(-0.25deg);
+
+.nn-sketch-1 {
+  transform: rotate(0.55deg) translateY(1px);
 }
 
-.nn-scientist-cell:nth-child(4n) {
-  transform: rotate(0.7deg);
+.nn-sketch-1::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M8 6 C34 9 65 4 93 9 M93 9 C91 35 98 65 92 95 M92 95 C65 91 35 98 7 92 M7 92 C10 64 3 35 8 6' fill='none' stroke='%23244b78' stroke-width='2.8' stroke-linecap='round' stroke-dasharray='7 4 11 6 3 5'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-2 {
+  transform: rotate(-0.35deg) translateX(-1px);
+}
+
+.nn-sketch-2::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M5 11 C31 5 65 7 96 8 M96 8 C92 34 96 67 91 93 M91 93 C63 98 34 94 8 96 M8 96 C5 70 4 37 5 11' fill='none' stroke='%23244b78' stroke-width='3.5' stroke-linecap='round' stroke-dasharray='5 4 9 3 12 6'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-3 {
+  transform: rotate(0.9deg);
+}
+
+.nn-sketch-3::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M9 7 C35 6 64 11 92 5 M92 5 C98 29 91 64 96 92 M96 92 C68 94 37 99 5 93 M5 93 C8 65 4 31 9 7' fill='none' stroke='%23244b78' stroke-width='3' stroke-linecap='round' stroke-dasharray='12 5 5 3 7 6'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-4 {
+  transform: rotate(-1.05deg) translateY(-1px);
+}
+
+.nn-sketch-4::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M6 6 C31 11 71 3 95 10 M95 10 C90 39 97 66 92 96 M92 96 C63 92 31 97 5 90 M5 90 C11 66 2 34 6 6' fill='none' stroke='%23244b78' stroke-width='2.7' stroke-linecap='round' stroke-dasharray='8 3 4 6 10 5'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-5 {
+  transform: rotate(0.25deg) translateX(1px);
+}
+
+.nn-sketch-5::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M10 9 C32 3 68 10 91 7 M91 7 C97 31 94 71 96 91 M96 91 C72 98 31 92 7 96 M7 96 C3 69 10 35 10 9' fill='none' stroke='%23244b78' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='4 5 11 4 6 3'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-6 {
+  transform: rotate(-0.55deg);
+}
+
+.nn-sketch-6::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M5 8 C29 10 68 4 96 7 M96 7 C91 34 97 63 93 95 M93 95 C68 91 34 98 9 92 M9 92 C4 66 7 34 5 8' fill='none' stroke='%23244b78' stroke-width='3.1' stroke-linecap='round' stroke-dasharray='9 6 3 4 13 5'/%3E%3C/svg%3E");
+}
+
+
+.nn-sketch-7 {
+  transform: rotate(1.1deg) translateY(1px);
+}
+
+.nn-sketch-7::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M8 10 C33 5 62 9 94 6 M94 6 C95 36 90 63 96 94 M96 94 C65 96 39 91 5 95 M5 95 C9 66 3 36 8 10' fill='none' stroke='%23244b78' stroke-width='2.9' stroke-linecap='round' stroke-dasharray='6 3 10 7 4 4'/%3E%3C/svg%3E");
 }
 
 .nn-scientist-cell.filled {
@@ -563,7 +614,9 @@
     gap: 5px;
   }
 .nn-scientist-napkin {
-  padding: 58px 12px 48px;
+  width: 115%;
+  max-width: none;
+  padding: 67px 14px 55px;
 }
   .nn-scientist-word {
     gap: 2px;
@@ -774,10 +827,16 @@
           "repeat(" + wordLength + ", var(--cell-size))";
 
         for (let i = 0; i < wordLength; i++) {
-          const cell = document.createElement("div");
-          cell.className = "nn-scientist-cell";
-          group.appendChild(cell);
-        }
+  const cell = document.createElement("div");
+
+  const variant =
+    (rowIndex * 5 + wordIndex * 3 + i * 2) % 8;
+
+  cell.className =
+    "nn-scientist-cell nn-sketch-" + variant;
+
+  group.appendChild(cell);
+}
 
         row.appendChild(group);
 
