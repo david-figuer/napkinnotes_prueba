@@ -89,42 +89,30 @@ Status: hidden
 
 .nn-scientist-napkin {
   position: relative;
-  width: min(100%, 720px);
+  width: min(100%, 760px);
   margin: 4px auto 28px;
-  padding: 34px 26px;
 
-  /* Papel ligeramente marfil */
-  background-color: #faf8f0;
+  /*
+   * Dejamos sitio arriba para el logo "BAR Napkin Notes"
+   * y abajo para "GRACIAS POR SU VISITA".
+   */
+  padding: 90px 40px 70px;
 
-  /* Textura muy suave de papel */
   background-image:
-    radial-gradient(circle at 18% 22%, rgba(70, 60, 40, .035) 0 1px, transparent 1.5px),
-    radial-gradient(circle at 73% 61%, rgba(70, 60, 40, .025) 0 1px, transparent 1.5px),
-    linear-gradient(96deg, transparent 48%, rgba(120, 110, 90, .025) 50%, transparent 52%),
-    linear-gradient(4deg, transparent 48%, rgba(120, 110, 90, .02) 50%, transparent 52%);
+    url("/pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 
-  background-size:
-    19px 17px,
-    23px 21px,
-    160px 140px,
-    190px 170px;
+  /* La propia imagen ya incluye bordes, arrugas y sombras. */
+  border: 0;
+  box-shadow: none;
 
-  border: 1px solid rgba(110, 100, 80, .15);
-
-  box-shadow:
-    0 10px 24px rgba(0, 0, 0, .08),
-    0 2px 5px rgba(0, 0, 0, .05);
-
-  transform: rotate(-0.18deg);
-}
-
-.nn-scientist-napkin::after {
-  content: "";
-  position: absolute;
-  inset: 7px;
-  pointer-events: none;
-  border: 1px solid rgba(100, 90, 70, .055);
-  transform: rotate(.22deg);
+  /*
+   * Una inclinación casi imperceptible ayuda a que
+   * siga pareciendo una servilleta apoyada sobre la mesa.
+   */
+  transform: rotate(-0.15deg);
 }
 
 .nn-scientist-board {
@@ -413,7 +401,7 @@ Status: hidden
     gap: 5px;
   }
 .nn-scientist-napkin {
-  padding: 26px 10px;
+  padding: 58px 12px 48px;
 }
   .nn-scientist-word {
     gap: 2px;
