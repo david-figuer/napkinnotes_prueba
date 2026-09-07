@@ -1,5 +1,5 @@
 Title: Científica de la semana
-Slug: cientifica-nn-prueba-4f7c2a
+Slug: cientifica_de_la_semana
 Status: hidden
 
 <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
@@ -620,17 +620,7 @@ Status: hidden
 
   const weekStart = getCurrentWeekMonday();
 
-  /*
-   * cientifica-data.js mantiene los datos de las científicas en
-   * window.NN_SCIENTISTS y, además, define qué científica toca cada semana:
-   *
-   * window.NN_SCIENTIST_WEEKS = {
-   *   "2026-09-07": "cientifica-nn-prueba-4f7c2a",
-   *   "2026-09-14": "cientifica-nn-prueba-8d31b7"
-   * };
-   *
-   * La fecha de la izquierda SIEMPRE es el lunes de esa semana.
-   */
+ 
   const scientistKey =
     window.NN_SCIENTIST_WEEKS &&
     window.NN_SCIENTIST_WEEKS[weekStart];
