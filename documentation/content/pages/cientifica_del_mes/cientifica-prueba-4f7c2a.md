@@ -1,7 +1,6 @@
-Title: Científica del mes
+Title: Científica de la semana
 Slug: cientifica-nn-prueba-4f7c2a
 Status: hidden
-Summary: Prueba privada del minijuego Científica del mes de Napkin Notes.
 
 <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
 
@@ -451,7 +450,7 @@ Summary: Prueba privada del minijuego Científica del mes de Napkin Notes.
 
 <div class="nn-scientist-game" id="nnScientistGame">
   <div class="nn-scientist-intro">
-    <p class="nn-scientist-kicker">Prototipo · Científica del mes</p>
+    <p class="nn-scientist-kicker"> Científica de la semana</p>
     <p><strong>Adivina el nombre de la científica.</strong></p>
     <p class="nn-scientist-rules" id="nnScientistRules"></p>
   </div>
