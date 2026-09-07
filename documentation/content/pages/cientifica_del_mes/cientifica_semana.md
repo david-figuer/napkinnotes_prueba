@@ -1,6 +1,8 @@
 Title: Científica de la semana
 Slug: cientifica_de_la_semana
 Status: hidden
+Summary: Adivina cada semana qué científica se esconde detrás de las casillas. Tienes cinco intentos.
+Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
 
 <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
 
