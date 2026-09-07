@@ -238,7 +238,6 @@ Summary: Prueba privada del minijuego Científica del mes de Napkin Notes.
 .nn-scientist-cell.present,
 .nn-scientist-cell.absent {
   color: #fff;
-  border-color: transparent;
 }
 
 .nn-scientist-cell.correct {
@@ -428,7 +427,6 @@ Summary: Prueba privada del minijuego Científica del mes de Napkin Notes.
   }
 
   .nn-scientist-cell {
-    border-width: 1.5px;
     font-size: clamp(.72rem, 3.7vw, 1rem);
   }
 
