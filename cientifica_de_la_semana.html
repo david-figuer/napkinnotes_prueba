@@ -15,7 +15,7 @@
 
         <meta name="author" content="" />
 
-        <meta name="description" content="/* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */ .nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box …
+        <meta name="description" content=".nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box; } .nn-scientist-intro { max-width: 640px; margin: 0 auto 22px; text-align: center; } .nn-scientist-kicker { margin: 0 0 …
 " />
 
 
@@ -38,7 +38,7 @@
 
 <meta property="og:title" content="Científica de la semana" />
 <meta property="og:url" content="https://napkinnotes.es/cientifica_de_la_semana" />
-<meta property="og:description" content="/* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */ .nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box …" />
+<meta property="og:description" content=".nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box; } .nn-scientist-intro { max-width: 640px; margin: 0 auto 22px; text-align: center; } .nn-scientist-kicker { margin: 0 0 …" />
 <meta property="og:site_name" content="Napkin Notes" />
 <meta property="og:type" content="article" />
 <meta property="og:article:author" content="" />
@@ -47,7 +47,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Científica de la semana">
-<meta name="twitter:description" content="/* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */ .nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box …">
+<meta name="twitter:description" content=".nn-comments { display: none !important; } .nn-scientist-game { --nn-red: #b81424; --nn-text: #1f2937; --nn-muted: #64748b; --nn-border: #d7dce2; --nn-correct: #6aaa64; --nn-present: #c9b458; --nn-absent: #787c7e; --nn-soft: #f7f7f5; width: 100%; max-width: 780px; margin: 10px auto 40px; color: var(--nn-text); box-sizing: border-box; } .nn-scientist-game * { box-sizing: border-box; } .nn-scientist-intro { max-width: 640px; margin: 0 auto 22px; text-align: center; } .nn-scientist-kicker { margin: 0 0 …">
 
 
 
@@ -167,7 +167,6 @@
             <script src="/code/cientifica-del-mes/cientifica-data.js"></script>
 
 <style>
-  /* Esta página es solo el juego: ocultamos los comentarios heredados de page.html */
 .nn-comments {
   display: none !important;
 }
@@ -320,10 +319,8 @@
   align-items: center;
   justify-content: center;
 
-  /* La servilleta se ve a través */
   background: transparent;
 
-  /* Azul de boli */
   color: #244b78;
 
   font-size: clamp(.82rem, 3vw, 1.25rem);
@@ -337,12 +334,7 @@
     color .2s ease;
 }
 
-/*
- * Contorno irregular dibujado a boli.
- * No es un simple border:dashed: el trazado del <span class="caps">SVG</span>
- * tiene pequeñas irregularidades.
- */
-/* Base del trazo de boli */
+
 .nn-scientist-cell::before {
   content: "";
   position: absolute;
@@ -357,7 +349,7 @@
 }
 
 
-/* 8 cuadrados realmente distintos */
+
 
 .nn-sketch-0 {
   transform: rotate(-0.8deg);
@@ -737,11 +729,7 @@
   const bio = document.getElementById("nnScientistBio");
   const more = document.getElementById("nnScientistMore");
 
-  /*
-   * Devuelve la fecha de calendario actual en Europe/Madrid.
-   * La convertimos a una fecha UTC "neutra" para hacer cálculos de días
-   * sin que los cambios de horario de verano alteren la semana.
-   */
+
   function getMadridCalendarDate() {
     const parts = new Intl.DateTimeFormat("en-GB", {
       timeZone: "Europe/Madrid",
@@ -765,11 +753,6 @@
     ));
   }
 
-  /*
-   * Cada semana se identifica por su lunes, en formato YYYY-MM-DD.
-   * Por ejemplo, cualquier día entre el lunes 2026-09-07 y el domingo
-   * 2026-09-13 devuelve "2026-09-07".
-   */
   function getCurrentWeekMonday() {
     const date = getMadridCalendarDate();
     const day = date.getUTCDay();
@@ -817,7 +800,6 @@
   });
   const answerLetters = answerWords.join("");
 
-  /* Cada lunes empieza una partida independiente. */
   const storageKey =
     "nn_scientist_" + weekStart + "_" + scientistKey;
 
