@@ -213,15 +213,53 @@
   color: var(--nn-muted);
   font-size: .94rem;
 }
-.nn-scientist-hint {
-  margin: 12px auto 0;
+.nn-scientist-hint-box {
   max-width: 560px;
-  color: var(--nn-text);
-  font-size: .92rem;
-  font-style: italic;
+  margin: -4px auto 24px;
+  padding: 0;
+  border: 2px solid var(--nn-red);
+  border-radius: 10px;
+  background: #fff8f8;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(184, 20, 36, .10);
 }
 
-.nn-scientist-hint[hidden] {
+.nn-scientist-hint-box[hidden] {
+  display: none;
+}
+
+.nn-scientist-hint-button {
+  width: 100%;
+  padding: 14px 18px;
+  border: 0;
+  background: transparent;
+  color: var(--nn-red);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nn-scientist-hint-button:hover {
+  background: rgba(184, 20, 36, .05);
+}
+
+.nn-scientist-hint-icon {
+  margin-right: 6px;
+}
+
+.nn-scientist-hint-text {
+  margin: 0;
+  padding: 0 20px 16px;
+  color: var(--nn-text);
+  font-size: .94rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.nn-scientist-hint-text[hidden] {
   display: none;
 }
 .nn-scientist-legend {
@@ -660,11 +698,7 @@
   <p><strong>Adivina el nombre de la&nbsp;científica.</strong></p>
   <p class="nn-scientist-rules" id="nnScientistRules"></p>
 
-  <p
-    class="nn-scientist-hint"
-    id="nnScientistHint"
-    hidden>
-  </p>
+
 </div>
 
   <div class="nn-scientist-legend" aria-label="Leyenda de colores">
@@ -681,7 +715,27 @@
       letra ausente
     </span>
   </div>
+<div
+  class="nn-scientist-hint-box"
+  id="nnScientistHintBox"
+  hidden
+>
+  <button
+    class="nn-scientist-hint-button"
+    id="nnScientistHintButton"
+    type="button"
+    aria-expanded="false"
+  >
+    <span class="nn-scientist-hint-icon" aria-hidden="true">💡</span>
+    ¿Quieres una pista?
+  </button>
 
+  <p
+    class="nn-scientist-hint-text"
+    id="nnScientistHintText"
+    hidden>
+  </p>
+</div>
 <div class="nn-scientist-napkin">
   <div
     class="nn-scientist-board"
@@ -739,7 +793,9 @@
   const counter = document.getElementById("nnScientistCounter");
   const rules = document.getElementById("nnScientistRules");
   const result = document.getElementById("nnScientistResult");
-  const hint = document.getElementById("nnScientistHint");
+  const hintBox = document.getElementById("nnScientistHintBox");
+  const hintButton = document.getElementById("nnScientistHintButton");
+  const hintText = document.getElementById("nnScientistHintText");
   const resultHeading = document.getElementById("nnScientistResultHeading");
   const photo = document.getElementById("nnScientistPhoto");
   const scientistName = document.getElementById("nnScientistName");
@@ -804,8 +860,22 @@ if (
   typeof scientist.pista === "string" &&
   scientist.pista.trim() !== ""
 ) {
-  hint.textContent = "Pista: " + scientist.pista.trim();
-  hint.hidden = false;
+  hintText.textContent = scientist.pista.trim();
+  hintBox.hidden = false;
+
+  hintButton.addEventListener("click", function () {
+    const isHidden = hintText.hidden;
+
+    hintText.hidden = !isHidden;
+    hintButton.setAttribute(
+      "aria-expanded",
+      isHidden ? "true" : "false"
+    );
+
+    hintButton.innerHTML = isHidden
+      ? '<span class="nn-scientist-hint-icon" aria-hidden="true">💡</span>Pista'
+      : '<span class="nn-scientist-hint-icon" aria-hidden="true">💡</span>¿Quieres una pista?';
+  });
 }
   function normalizeName(value) {
     return String(value)
