@@ -133,12 +133,157 @@
 
 <style>
 /* =========================================================
-   PRUEBA MÓVIL /ABOUT-PRUEBAS
-   En móvil:
+   /ABOUT-PRUEBAS
+   MÓVIL
    - 2 personas por fila
-   - solo foto + nombre
-   - al pulsar, la información se abre debajo de esa fila
-   - escritorio conserva el comportamiento actual
+   - foto + nombre
+   - al pulsar, bio debajo de la fila
+
+   ESCRITORIO
+   - 3 personas por fila (2 en escritorio estrecho)
+   - al pasar el ratón, la propia tarjeta se amplía dentro
+     de la cuadrícula, sin popup flotante
+   ========================================================= */
+
+
+/* =========================================================
+   ESCRITORIO
+   ========================================================= */
+
+@media (min-width: 981px) {
+
+    .nn-squad-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 24px !important;
+        align-items: start !important;
+    }
+
+    .nn-player-card {
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /*
+     * Anulamos el panel flotante original de custom.css.
+     * En esta página de pruebas el panel expandido vive
+     * dentro de la propia cuadrícula.
+     */
+    .nn-player-card > .nn-player-card__expanded {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        z-index: auto !important;
+
+        display: none !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        margin: 0 !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+
+        border: 0 !important;
+        border-radius: inherit !important;
+        box-shadow: none !important;
+        overflow: hidden;
+    }
+
+    /*
+     * La tarjeta abierta ocupa dos columnas.
+     * JS fija además su fila y el lado hacia el que crece
+     * para evitar saltos bruscos al hacer hover.
+     */
+    .nn-player-card.is-desktop-open {
+        grid-column: span 2;
+        min-height: 0 !important;
+        overflow: hidden !important;
+        z-index: 5 !important;
+
+        border-color: rgba(196, 154, 102, .58) !important;
+        box-shadow: 0 24px 60px rgba(20, 10, 10, .14) !important;
+        transform: none !important;
+    }
+
+    .nn-player-card.is-desktop-open > .nn-player-card__preview {
+        display: none !important;
+    }
+
+    .nn-player-card.is-desktop-open > .nn-player-card__expanded {
+        display: grid !important;
+        grid-template-columns: minmax(250px, .85fr) minmax(0, 1.25fr);
+        align-items: stretch;
+        animation: nn-desktop-card-open .24s ease;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__expanded-media {
+        display: block !important;
+        min-height: 420px;
+        background: #d8d0c6;
+        overflow: hidden;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__expanded-image {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 420px;
+        object-fit: cover;
+        transform: none !important;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__expanded-content {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+        padding: 34px 32px !important;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__role--hover,
+    .nn-player-card.is-desktop-open .nn-player-card__name--hover {
+        display: block !important;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__name--hover {
+        margin-top: 0 !important;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__description {
+        overflow-wrap: anywhere;
+    }
+
+    .nn-player-card.is-desktop-open .nn-player-card__links {
+        margin-top: 18px;
+    }
+
+    @keyframes nn-desktop-card-open {
+        from {
+            opacity: 0;
+            transform: translateY(5px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* Tres columnas en escritorio ancho. */
+@media (min-width: 1181px) {
+    .nn-squad-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
    ========================================================= */
 
 @media (max-width: 980px) {
@@ -155,15 +300,15 @@
     }
 
     .nn-player-card {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    overflow: hidden;
-    border-radius: 18px;
-    cursor: pointer;
-    box-sizing: border-box;
-}
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        overflow: hidden;
+        border-radius: 18px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
 
     .nn-player-card__preview,
     .nn-player-card__media,
@@ -173,7 +318,6 @@
         box-sizing: border-box;
     }
 
-    /* En móvil dejamos visible únicamente la tarjeta compacta. */
     .nn-player-card__preview {
         display: block !important;
         width: 100% !important;
@@ -200,7 +344,6 @@
         text-align: center;
     }
 
-    /* En la tarjeta compacta mostramos solo el nombre. */
     .nn-player-card__preview .nn-player-card__role {
         display: none !important;
     }
@@ -212,12 +355,10 @@
         text-align: center;
     }
 
-    /* El bloque expandido original no se usa directamente en móvil. */
     .nn-player-card > .nn-player-card__expanded {
         display: none !important;
     }
 
-    /* Panel móvil que JS coloca debajo de la fila correspondiente. */
     .nn-mobile-author-panel {
         grid-column: 1 / -1;
         width: 100%;
@@ -278,7 +419,9 @@
     }
 }
 
+
 @media (max-width: 420px) {
+
     .nn-squad-grid {
         gap: 10px !important;
     }
@@ -294,43 +437,61 @@
 }
 </style>
 
+
 <main class="nn-squad-page">
 
 <header class="nn-squad-hero">
     <div class="nn-squad-hero__inner nn-squad-hero__inner--with-metrics">
+
         <div class="nn-squad-hero__content">
             <span class="nn-kicker">Equipo</span>
-            <h1 class="nn-squad-hero__title">Nosotros —&nbsp;pruebas</h1>
+
+            <h1 class="nn-squad-hero__title">
+                Nosotros —&nbsp;pruebas
+            </h1>
+
             <p class="nn-squad-hero__subtitle">
                 Las personas detrás de Napkin Notes. Ciencia, edición y diseño en la misma alineación.
             </p>
         </div>
 
-        <div class="nn-squad-hero__metrics" aria-label="Métricas de Napkin Notes">
+        <div
+            class="nn-squad-hero__metrics"
+            aria-label="Métricas de Napkin Notes"
+        >
             <div class="nn-squad-hero__metric">
                 <strong>10</strong>
                 <span>autores</span>
             </div>
 
-            <a class="nn-squad-hero__metric nn-squad-hero__metric--link"
-               href="https://napkinnotes.es/archives"
-               aria-label="Ver todos los artículos">
+            <a
+                class="nn-squad-hero__metric nn-squad-hero__metric--link"
+                href="https://napkinnotes.es/archives"
+                aria-label="Ver todos los artículos"
+            >
                 <strong>20</strong>
                 <span>artículos</span>
             </a>
 
-            <a class="nn-squad-hero__metric nn-squad-hero__metric--link"
-               href="https://napkinnotes.es/explorar"
-               aria-label="Explorar categorías y tags">
+            <a
+                class="nn-squad-hero__metric nn-squad-hero__metric--link"
+                href="https://napkinnotes.es/explorar"
+                aria-label="Explorar categorías y tags"
+            >
                 <strong>12</strong>
                 <span>categorías</span>
             </a>
         </div>
+
     </div>
 </header>
 
+
 <section class="nn-squad-grid" id="nnSquadGrid">
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -338,24 +499,33 @@
             aria-expanded="false"
             aria-label="Ver información de Duvier Suárez Fontanella"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/duvier.png"
                     alt="Duvier Suárez Fontanella"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Creador, Desarrollador Web
                 </div>
-                <h2 class="nn-player-card__name">Duvier Suárez Fontanella</h2>
+
+                <h2 class="nn-player-card__name">
+                    Duvier Suárez Fontanella
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -365,6 +535,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Creador, Desarrollador Web
                 </div>
@@ -378,6 +549,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://produccioncientifica.usal.es/investigadores/819473/detalle"
@@ -393,11 +565,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -405,24 +583,33 @@
             aria-expanded="false"
             aria-label="Ver información de Gabriel Sánchez Pérez"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/gabriel.jpeg"
                     alt="Gabriel Sánchez Pérez"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editor, Responsable de Redes Sociales
                 </div>
-                <h2 class="nn-player-card__name">Gabriel Sánchez Pérez</h2>
+
+                <h2 class="nn-player-card__name">
+                    Gabriel Sánchez Pérez
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -432,6 +619,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editor, Responsable de Redes Sociales
                 </div>
@@ -445,6 +633,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://www.linkedin.com/in/gasape21/"
@@ -460,11 +649,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -472,24 +667,33 @@
             aria-expanded="false"
             aria-label="Ver información de David Figueruelo Hernán"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/david.jpg"
                     alt="David Figueruelo Hernán"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editor, Desarrollador Web Jefe
                 </div>
-                <h2 class="nn-player-card__name">David Figueruelo Hernán</h2>
+
+                <h2 class="nn-player-card__name">
+                    David Figueruelo Hernán
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -499,6 +703,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editor, Desarrollador Web Jefe
                 </div>
@@ -512,6 +717,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://inspirehep.net/authors/1869776?ui-citation-summary=true"
@@ -527,11 +733,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -539,24 +751,33 @@
             aria-expanded="false"
             aria-label="Ver información de Gretel Quintero Angulo"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/gretel.png"
                     alt="Gretel Quintero Angulo"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editora Jefa
                 </div>
-                <h2 class="nn-player-card__name">Gretel Quintero Angulo</h2>
+
+                <h2 class="nn-player-card__name">
+                    Gretel Quintero Angulo
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -566,6 +787,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editora Jefa
                 </div>
@@ -579,6 +801,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://www.linkedin.com/in/gretel-quintero-angulo/?originalSubdomain=de"
@@ -594,11 +817,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -606,24 +835,33 @@
             aria-expanded="false"
             aria-label="Ver información de María Pérez Garrote"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/maria.jpeg"
                     alt="María Pérez Garrote"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editora
                 </div>
-                <h2 class="nn-player-card__name">María Pérez Garrote</h2>
+
+                <h2 class="nn-player-card__name">
+                    María Pérez Garrote
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -633,6 +871,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editora
                 </div>
@@ -646,6 +885,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://produccioncientifica.usal.es/investigadores/1222882/detalle"
@@ -661,11 +901,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -673,24 +919,33 @@
             aria-expanded="false"
             aria-label="Ver información de David Barba González"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/barba.jpeg"
                     alt="David Barba González"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editor
                 </div>
-                <h2 class="nn-player-card__name">David Barba González</h2>
+
+                <h2 class="nn-player-card__name">
+                    David Barba González
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -700,6 +955,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editor
                 </div>
@@ -713,6 +969,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://www.linkedin.com/in/david-barba-gonz%C3%A1lez-854101215/"
@@ -728,11 +985,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -740,24 +1003,33 @@
             aria-expanded="false"
             aria-label="Ver información de Paz Albares Vicente"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/paz.jpg"
                     alt="Paz Albares Vicente"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Editora
                 </div>
-                <h2 class="nn-player-card__name">Paz Albares Vicente</h2>
+
+                <h2 class="nn-player-card__name">
+                    Paz Albares Vicente
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -767,6 +1039,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Editora
                 </div>
@@ -780,6 +1053,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://portalcientifico.upm.es/es/ipublic/researcher/338845"
@@ -795,11 +1069,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -807,24 +1087,33 @@
             aria-expanded="false"
             aria-label="Ver información de Ruchika"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/Ruchika.jpeg"
                     alt="Ruchika"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Colaboradora
                 </div>
-                <h2 class="nn-player-card__name">Ruchika</h2>
+
+                <h2 class="nn-player-card__name">
+                    Ruchika
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -834,6 +1123,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Colaboradora
                 </div>
@@ -847,6 +1137,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://produccioncientifica.usal.es/investigadores/1999168/detalle"
@@ -862,11 +1153,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -874,24 +1171,33 @@
             aria-expanded="false"
             aria-label="Ver información de Gonzalo Matias Romano"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/gonzalo.jpeg"
                     alt="Gonzalo Matias Romano"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Colaborador
                 </div>
-                <h2 class="nn-player-card__name">Gonzalo Matias Romano</h2>
+
+                <h2 class="nn-player-card__name">
+                    Gonzalo Matias Romano
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -901,6 +1207,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Colaborador
                 </div>
@@ -914,6 +1221,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://produccioncientifica.usal.es/investigadores/2396788/detalle"
@@ -929,11 +1237,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
     <article class="nn-player-card nn-player-card--expand">
+
         <div
             class="nn-player-card__preview"
             role="button"
@@ -941,24 +1255,33 @@
             aria-expanded="false"
             aria-label="Ver información de Diego Martín González"
         >
+
             <div class="nn-player-card__media">
                 <img
                     class="nn-player-card__image"
                     src="https://napkinnotes.es/images/Diego.png"
                     alt="Diego Martín González"
                 >
+
                 <div class="nn-player-card__overlay"></div>
             </div>
 
             <div class="nn-player-card__base">
+
                 <div class="nn-player-card__role">
                     Colaborador
                 </div>
-                <h2 class="nn-player-card__name">Diego Martín González</h2>
+
+                <h2 class="nn-player-card__name">
+                    Diego Martín González
+                </h2>
+
             </div>
         </div>
 
+
         <div class="nn-player-card__expanded">
+
             <div class="nn-player-card__expanded-media">
                 <img
                     class="nn-player-card__expanded-image"
@@ -968,6 +1291,7 @@
             </div>
 
             <div class="nn-player-card__expanded-content">
+
                 <div class="nn-player-card__role nn-player-card__role--hover">
                     Colaborador
                 </div>
@@ -981,6 +1305,7 @@
                 </div>
 
                 <div class="nn-player-card__links">
+
                     <a
                         class="nn-player-card__link"
                         href="https://gracus.usal.es/member.php?id=24"
@@ -996,11 +1321,17 @@
                     >
                         Ver artículos
                     </a>
+
                 </div>
+
             </div>
         </div>
+
     </article>
+
+
 </section>
+
 
 <section class="nn-squad-extra">
     <div class="nn-section-card">
@@ -1025,36 +1356,58 @@
 
 </main>
 
+
 <script>
 (function () {
     "use strict";
 
     const MOBILE_BREAKPOINT = 980;
+    const DESKTOP_THREE_COLUMNS = 1180;
+    const DESKTOP_CLOSE_DELAY = 140;
+
     const grid = document.getElementById("nnSquadGrid");
 
     if (!grid) {
         return;
     }
 
-    const cards = Array.from(grid.querySelectorAll(".nn-player-card"));
+    const cards = Array.from(
+        grid.querySelectorAll(".nn-player-card")
+    );
+
     let openCard = null;
     let mobilePanel = null;
+
+    let desktopOpenCard = null;
+    let desktopCloseTimer = null;
+
 
     function isMobile() {
         return window.innerWidth <= MOBILE_BREAKPOINT;
     }
 
+
     function getPreview(card) {
         return card.querySelector(".nn-player-card__preview");
     }
 
+
+    /* =====================================================
+       MÓVIL
+       ===================================================== */
+
     function closeMobilePanel() {
+
         if (openCard) {
             openCard.classList.remove("is-mobile-open");
 
             const oldPreview = getPreview(openCard);
+
             if (oldPreview) {
-                oldPreview.setAttribute("aria-expanded", "false");
+                oldPreview.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
             }
         }
 
@@ -1066,20 +1419,27 @@
         mobilePanel = null;
     }
 
-    function getRowEndCard(card) {
+
+    function getMobileRowEndCard(card) {
+
         const cardIndex = cards.indexOf(card);
 
         if (cardIndex === -1) {
             return card;
         }
 
-        const rowStart = Math.floor(cardIndex / 2) * 2;
-        const rowEndIndex = Math.min(rowStart + 1, cards.length - 1);
+        const rowStart =
+            Math.floor(cardIndex / 2) * 2;
+
+        const rowEndIndex =
+            Math.min(rowStart + 1, cards.length - 1);
 
         return cards[rowEndIndex];
     }
 
+
     function openMobilePanel(card) {
+
         const expandedContent = card.querySelector(
             ".nn-player-card__expanded-content"
         );
@@ -1088,7 +1448,8 @@
             return;
         }
 
-        const wasAlreadyOpen = openCard === card;
+        const wasAlreadyOpen =
+            openCard === card;
 
         closeMobilePanel();
 
@@ -1096,70 +1457,328 @@
             return;
         }
 
-        mobilePanel = document.createElement("div");
-        mobilePanel.className = "nn-mobile-author-panel";
-        mobilePanel.setAttribute("aria-live", "polite");
+        mobilePanel =
+            document.createElement("div");
 
-        const contentClone = expandedContent.cloneNode(true);
+        mobilePanel.className =
+            "nn-mobile-author-panel";
+
+        mobilePanel.setAttribute(
+            "aria-live",
+            "polite"
+        );
+
+        const contentClone =
+            expandedContent.cloneNode(true);
+
         mobilePanel.appendChild(contentClone);
 
-        const rowEndCard = getRowEndCard(card);
-        rowEndCard.insertAdjacentElement("afterend", mobilePanel);
+        const rowEndCard =
+            getMobileRowEndCard(card);
 
-        card.classList.add("is-mobile-open");
+        rowEndCard.insertAdjacentElement(
+            "afterend",
+            mobilePanel
+        );
 
-        const preview = getPreview(card);
+        card.classList.add(
+            "is-mobile-open"
+        );
+
+        const preview =
+            getPreview(card);
+
         if (preview) {
-            preview.setAttribute("aria-expanded", "true");
+            preview.setAttribute(
+                "aria-expanded",
+                "true"
+            );
         }
 
         openCard = card;
     }
 
-    function activateCard(card) {
-        if (!isMobile()) {
+
+    /* =====================================================
+       ESCRITORIO
+       ===================================================== */
+
+    function desktopColumnCount() {
+        return window.innerWidth > DESKTOP_THREE_COLUMNS
+            ? 3
+            : 2;
+    }
+
+
+    function clearDesktopPlacement(card) {
+
+        card.style.gridColumn = "";
+        card.style.gridRow = "";
+    }
+
+
+    function setDesktopPlacement(card) {
+
+        const index = cards.indexOf(card);
+
+        if (index === -1) {
             return;
         }
 
-        openMobilePanel(card);
+        const columns =
+            desktopColumnCount();
+
+        const row =
+            Math.floor(index / columns) + 1;
+
+        const originalColumn =
+            (index % columns) + 1;
+
+        /*
+         * Con 3 columnas:
+         * col. 1 crece a la derecha,
+         * col. 2 crece a la derecha,
+         * col. 3 crece a la izquierda.
+         *
+         * Así la zona ampliada siempre contiene la posición
+         * original del ratón y evitamos el parpadeo típico
+         * de un grid que se recoloca al hacer hover.
+         */
+        let startColumn = 1;
+
+        if (columns === 3) {
+            startColumn =
+                originalColumn === 3
+                    ? 2
+                    : originalColumn;
+        }
+
+        card.style.gridRow =
+            String(row);
+
+        card.style.gridColumn =
+            startColumn + " / span 2";
     }
 
+
+    function closeDesktopCard() {
+
+        if (!desktopOpenCard) {
+            return;
+        }
+
+        desktopOpenCard.classList.remove(
+            "is-desktop-open"
+        );
+
+        const preview =
+            getPreview(desktopOpenCard);
+
+        if (preview) {
+            preview.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+
+        clearDesktopPlacement(
+            desktopOpenCard
+        );
+
+        desktopOpenCard = null;
+    }
+
+
+    function openDesktopCard(card) {
+
+        if (isMobile()) {
+            return;
+        }
+
+        if (
+            desktopOpenCard &&
+            desktopOpenCard !== card
+        ) {
+            closeDesktopCard();
+        }
+
+        if (desktopCloseTimer) {
+            clearTimeout(
+                desktopCloseTimer
+            );
+
+            desktopCloseTimer = null;
+        }
+
+        setDesktopPlacement(card);
+
+        card.classList.add(
+            "is-desktop-open"
+        );
+
+        const preview =
+            getPreview(card);
+
+        if (preview) {
+            preview.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+        }
+
+        desktopOpenCard = card;
+    }
+
+
+    function scheduleDesktopClose(card) {
+
+        if (isMobile()) {
+            return;
+        }
+
+        if (desktopCloseTimer) {
+            clearTimeout(
+                desktopCloseTimer
+            );
+        }
+
+        desktopCloseTimer =
+            window.setTimeout(function () {
+
+                if (
+                    desktopOpenCard === card &&
+                    !card.matches(":hover")
+                ) {
+                    closeDesktopCard();
+                }
+
+            }, DESKTOP_CLOSE_DELAY);
+    }
+
+
+    /* =====================================================
+       EVENTOS
+       ===================================================== */
+
     cards.forEach(function (card) {
-        const preview = getPreview(card);
+
+        const preview =
+            getPreview(card);
 
         if (!preview) {
             return;
         }
 
-        preview.addEventListener("click", function (event) {
-            if (!isMobile()) {
-                return;
+
+        card.addEventListener(
+            "mouseenter",
+            function () {
+
+                if (isMobile()) {
+                    return;
+                }
+
+                openDesktopCard(card);
             }
+        );
 
-            if (event.target.closest("a")) {
-                return;
+
+        card.addEventListener(
+            "mouseleave",
+            function () {
+
+                if (isMobile()) {
+                    return;
+                }
+
+                scheduleDesktopClose(card);
             }
+        );
 
-            activateCard(card);
-        });
 
-        preview.addEventListener("keydown", function (event) {
-            if (!isMobile()) {
-                return;
+        preview.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    event.target.closest("a")
+                ) {
+                    return;
+                }
+
+                if (isMobile()) {
+                    openMobilePanel(card);
+                    return;
+                }
+
+                /*
+                 * También permitimos clic en escritorio.
+                 * Es útil para trackpad y accesibilidad.
+                 */
+                if (
+                    desktopOpenCard === card
+                ) {
+                    closeDesktopCard();
+                } else {
+                    openDesktopCard(card);
+                }
             }
+        );
 
-            if (event.key === "Enter" || event.key === " ") {
+
+        preview.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key !== "Enter" &&
+                    event.key !== " "
+                ) {
+                    return;
+                }
+
                 event.preventDefault();
-                activateCard(card);
+
+                if (isMobile()) {
+                    openMobilePanel(card);
+                    return;
+                }
+
+                if (
+                    desktopOpenCard === card
+                ) {
+                    closeDesktopCard();
+                } else {
+                    openDesktopCard(card);
+                }
             }
-        });
+        );
+
     });
 
-    window.addEventListener("resize", function () {
-        if (!isMobile()) {
-            closeMobilePanel();
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (isMobile()) {
+                closeDesktopCard();
+            } else {
+                closeMobilePanel();
+
+                /*
+                 * Si cambia 2 ↔ 3 columnas mientras una tarjeta
+                 * está abierta, recalculamos su posición.
+                 */
+                if (desktopOpenCard) {
+                    setDesktopPlacement(
+                        desktopOpenCard
+                    );
+                }
+            }
         }
-    });
+    );
+
 })();
 </script>
 
