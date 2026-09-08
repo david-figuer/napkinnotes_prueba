@@ -38,7 +38,7 @@ window.NN_SCIENTISTS = {
     image: "/images/paz.jpg",
     bio: "Paz es doctora en Física, especializada en Física Matemática...",
     url: "/autor/paz-albares-vicente",
-    pista: ""
+    pista: "Es alguien del grupo"
   },
 
   "sci-002": {
@@ -56,7 +56,7 @@ window.NN_SCIENTISTS = {
     image: "/images/gretel.png",
     bio: "Gretel observa el mundo con la precisión...",
     url: "/autor/gretel-quintero-angulo",
-    pista: ""
+    pista: "Edita cosas"
   }
 };
 
