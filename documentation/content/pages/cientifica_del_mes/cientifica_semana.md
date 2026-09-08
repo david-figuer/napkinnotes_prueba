@@ -53,7 +53,17 @@ Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
   color: var(--nn-muted);
   font-size: .94rem;
 }
+.nn-scientist-hint {
+  margin: 12px auto 0;
+  max-width: 560px;
+  color: var(--nn-text);
+  font-size: .92rem;
+  font-style: italic;
+}
 
+.nn-scientist-hint[hidden] {
+  display: none;
+}
 .nn-scientist-legend {
   display: flex;
   flex-wrap: wrap;
@@ -487,9 +497,15 @@ Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
 
 <div class="nn-scientist-game" id="nnScientistGame">
   <div class="nn-scientist-intro">
-    <p><strong>Adivina el nombre de la científica.</strong></p>
-    <p class="nn-scientist-rules" id="nnScientistRules"></p>
-  </div>
+  <p><strong>Adivina el nombre de la científica.</strong></p>
+  <p class="nn-scientist-rules" id="nnScientistRules"></p>
+
+  <p
+    class="nn-scientist-hint"
+    id="nnScientistHint"
+    hidden>
+  </p>
+</div>
 
   <div class="nn-scientist-legend" aria-label="Leyenda de colores">
     <span class="nn-scientist-legend-item">
@@ -563,6 +579,7 @@ Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
   const counter = document.getElementById("nnScientistCounter");
   const rules = document.getElementById("nnScientistRules");
   const result = document.getElementById("nnScientistResult");
+  const hint = document.getElementById("nnScientistHint");
   const resultHeading = document.getElementById("nnScientistResultHeading");
   const photo = document.getElementById("nnScientistPhoto");
   const scientistName = document.getElementById("nnScientistName");
@@ -623,7 +640,13 @@ Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
       "</div>";
     return;
   }
-
+if (
+  typeof scientist.pista === "string" &&
+  scientist.pista.trim() !== ""
+) {
+  hint.textContent = "Pista: " + scientist.pista.trim();
+  hint.hidden = false;
+}
   function normalizeName(value) {
     return String(value)
       .trim()
