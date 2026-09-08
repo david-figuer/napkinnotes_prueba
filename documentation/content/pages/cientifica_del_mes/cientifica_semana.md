@@ -565,6 +565,7 @@ Image: pages/cientifica_del_mes/imagenes/servilleta_cientifica.jpeg
     id="nnScientistHintButton"
     type="button"
     aria-expanded="false"
+    aria-controls="nnScientistHintText"
   >
     <span class="nn-scientist-hint-icon" aria-hidden="true">💡</span>
     ¿Quieres una pista?
