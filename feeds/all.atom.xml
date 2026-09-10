@@ -1,5 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="https://napkinnotes.es/" rel="alternate"/><link href="https://napkinnotes.es/feeds/all.atom.xml" rel="self"/><id>https://napkinnotes.es/</id><updated>2026-09-03T00:00:00+02:00</updated><entry><title>Un vikingo en Marte</title><link href="https://napkinnotes.es/un-vikingo-en-marte" rel="alternate"/><published>2026-09-03T00:00:00+02:00</published><updated>2026-09-03T00:00:00+02:00</updated><author><name>Duvier Suárez Fontanella</name></author><id>tag:napkinnotes.es,2026-09-03:/un-vikingo-en-marte</id><summary type="html">&lt;p&gt;Hace cincuenta años, el 3 de septiembre de 1976, la &lt;span class="caps"&gt;NASA&lt;/span&gt; lanzó la Viking 2, la segunda de dos sondas destinadas a estudiar la composición de la atmósfera marciana. Hoy, en Napkin Notes, te explicamos el proceso que utilizaron la misiones Viking para amartizar sus sondas y sobrevivir a una atmósfera capaz de calentar una nave brutalmente, pero incapaz de frenarla por sí&amp;nbsp;sola.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Napkin Notes</title><link href="https://napkinnotes.es/" rel="alternate"/><link href="https://napkinnotes.es/feeds/all.atom.xml" rel="self"/><id>https://napkinnotes.es/</id><updated>2026-09-10T00:00:00+02:00</updated><entry><title>¿De qué color es el mundo cuando nadie lo está mirando?</title><link href="https://napkinnotes.es/de-que-color-es-el-mundo-cuando-nadie-lo-esta-mirando" rel="alternate"/><published>2026-09-10T00:00:00+02:00</published><updated>2026-09-10T00:00:00+02:00</updated><author><name>David Figueruelo Hernán</name></author><id>tag:napkinnotes.es,2026-09-10:/de-que-color-es-el-mundo-cuando-nadie-lo-esta-mirando</id><summary type="html">&lt;p&gt;Si nadie está mirando, ¿tiene color el mundo? Dicho de otra forma, ¿dónde aparece realmente el color o es una propiedad de la naturaleza o simplemente parte de nuestra&amp;nbsp;percepción?&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#la-pared-roja"&gt;La pared&amp;nbsp;roja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#el-rojo-no-entra-en-los-ojos"&gt;El rojo no entra en los&amp;nbsp;ojos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#los-colores-que-no-estan-en-el-arcoiris"&gt;Los colores que no están en el&amp;nbsp;arcoíris&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#la-pared-cambia-de-color-sin-cambiar"&gt;La pared cambia de color sin&amp;nbsp;cambiar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#ahora-aparece-una-abeja"&gt;Ahora aparece una&amp;nbsp;abeja&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#no-todas-las-retinas-son-iguales-y-el-curioso-caso-del-animal-de-los-doce-receptores"&gt;No todas las retinas son iguales y el curioso caso del animal de los doce&amp;nbsp;receptores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#quiza-cada-uno-vea-un-mundo-ligeramente-distinto"&gt;Quizá cada uno vea un mundo ligeramente&amp;nbsp;distinto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#el-experimento-del-espectro-invertido"&gt;El experimento del espectro&amp;nbsp;invertido&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#entonces-existe-el-color"&gt;Entonces, ¿existe el&amp;nbsp;color?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#referencias"&gt;Referencias&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Hay lugares en los que uno tiene la sensación de haber llegado al final de algo. La carretera se estrecha, el valle se hunde entre las montañas y las casas de piedra y pizarra empiezan a aparecer, agarradas a la tierra como si llevaran allí mucho tiempo o, al menos, mucho más que nosotros, con la certeza de estar en un lugar que existió antes que nosotros y que existirá&amp;nbsp;después.&lt;/p&gt;
+&lt;p&gt;La Alberca es uno de esos lugares  &lt;a class="nn-cite" href="#ref-1"&gt;[1]&lt;/a&gt;. Está escondida en la Sierra de Francia, al sur de Salamanca, entre bosques de castaños y robles. Sus calles estrechas y empedradas se retuercen entre casas de piedra, madera y adobe, formando un entramado en el que las fachadas parecen apoyarse unas sobre otras y apenas dejan entrever el cielo. Durante siglos, este pequeño pueblo serrano ha conservado buena parte de su arquitectura y sus tradiciones. Hoy sigue siendo un lugar tranquilo, especialmente cuando uno se aleja de la plaza llena de bares y se pierde por sus&amp;nbsp;calles.&lt;/p&gt;
+&lt;p&gt;Imagínate llegando una tarde de otoño, cuando el sol todavía ilumina las laderas pero ya empieza a bajar detrás de las montañas. No hay tráfico. No hay grandes edificios. No hay demasiada gente. Solo piedra, árboles, una pequeña corriente de agua y el sonido lejano de algún&amp;nbsp;bar.&lt;/p&gt;
+&lt;p&gt;Y entonces miras alrededor. Las paredes de pizarra son grises. La vegetación es verde. El cielo es azul. Algunas flores salpican el camino con colores que parecen tan evidentes que ni siquiera te paras a pensarlos. Y entonces te&amp;nbsp;preguntas:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;¿De qué color es realmente el mundo cuando nadie lo está&amp;nbsp;mirando?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A primera vista, parece una pregunta filosófica, inventada para complicar una cosa que funciona perfectamente bien. Si miro una pared roja, la pared es roja. Punto. La explicación física parece sencilla. La luz, que generalmente está formada por muchas longitudes de onda (es decir, por muchos colores), llega desde una fuente, ilumina la superficie y la materia absorbe algunas longitudes de onda mientras refleja otras. La radiación reflejada alcanza nuestros ojos y nuestro sistema visual la interpreta como un determinado&amp;nbsp;color.&lt;/p&gt;
+&lt;p&gt;Podrías dejarlo ahí. Pero hay un pequeño problema. Esa explicación nos aclara &lt;strong&gt;qué ocurre con&lt;/strong&gt; la luz, pero no explica &lt;strong&gt;qué es&lt;/strong&gt; el&amp;nbsp;rojo.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="la-pared-roja"&gt;La pared roja&lt;a class="headerlink" href="#la-pared-roja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Vamos a empezar por lo más sencillo. La luz visible es una pequeña región del espectro electromagnético. Podemos describirla mediante una longitud de onda, una frecuencia o una distribución de energía en función de la longitud de onda. Cuando la luz llega a una superficie, su composición espectral puede cambiar. Una parte es absorbida, otra reflejada, otra transmitida y otra dispersada. En el caso de una pintura roja, por ejemplo, la materia tiene unas propiedades que hacen que la luz que regresa hacia nosotros contenga una mayor proporción de las longitudes de onda que asociamos con el rojo. Por eso percibimos la superficie de este&amp;nbsp;color.&lt;/p&gt;
+&lt;figure class="nn-article-figure"&gt;
+  &lt;img src="https://napkinnotes.es/images/Electromagnetic_spectrum,_NASA_illustration.jpeg" alt="Espectro electromagnético"&gt;
+  &lt;figcaption&gt;
+   Figura 1. Espectro electromagnético. Autor: &lt;a href="https://science.nasa.gov/ems/" target="_blank" rel="noopener noreferrer"&gt;&lt;span class="caps"&gt;NASA&lt;/span&gt;&lt;/a&gt;.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Hasta aquí, todo es física. Podemos medir la luz que sale de la pared con un espectrómetro. Podemos dibujar una curva. Podemos decir cuánta radiación hay alrededor de cada longitud de onda, que vamos a denotar&amp;nbsp;por &lt;span class="math"&gt;\(\lambda\)&lt;/span&gt;. Podemos escribirlo incluso de una forma bastante&amp;nbsp;limpia:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+L(\lambda)  \propto E(\lambda)R(\lambda),
+$$&lt;/div&gt;
+&lt;p&gt;al menos en el caso simplificado de una superficie iluminada,&amp;nbsp;donde &lt;span class="math"&gt;\(E(\lambda)\)&lt;/span&gt; representa la distribución espectral de la iluminación, es decir, cómo se reparte la energía de la luz entre las distintas longitudes de onda,&amp;nbsp;y &lt;span class="math"&gt;\(R(\lambda)\)&lt;/span&gt; la reflectancia espectral de la&amp;nbsp;superficie.&lt;/p&gt;
+&lt;p&gt;La luz que llega hasta nuestros ojos es el resultado de esa combinación,&amp;nbsp;con &lt;span class="math"&gt;\(\lambda =\)&lt;/span&gt; 650 nm en el caso del rojo. Pero 650 nm es una longitud de onda, no una experiencia. La diferencia parece pequeña cuando la escribimos así, pero es enorme, porque ahora hemos separado dos cosas que solemos tratar como si fueran la&amp;nbsp;misma:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;La descripción física de un&amp;nbsp;estímulo.&lt;/li&gt;
+&lt;li&gt;La experiencia que ese estímulo produce en&amp;nbsp;nosotros.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id="el-rojo-no-entra-en-los-ojos"&gt;El rojo no entra en los ojos&lt;a class="headerlink" href="#el-rojo-no-entra-en-los-ojos" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Cuando miro esa pared, la luz reflejada atraviesa primero la córnea, pasa por el cristalino y llega a la retina.
+En la retina no hay un receptor (o cono) cuyo trabajo sea detectar el rojo. Hay tres tipos principales de conos en la visión humana normal: los llamados S, M y L, con sensibilidades espectrales que se solapan y cubren distintas regiones del espectro visible, es decir, distintas longitudes de onda &lt;a class="nn-cite" href="#ref-2"&gt;[2]&lt;/a&gt;. Los nombres son deliberadamente aburridos: &lt;strong&gt;S&lt;/strong&gt;hort, &lt;strong&gt;M&lt;/strong&gt;edium y &lt;strong&gt;L&lt;/strong&gt;ong wavelength. En español: longitudes de onda cortas, medias y&amp;nbsp;largas. &lt;/p&gt;
+&lt;p&gt;Como cada tipo de cono responde a un rango bastante amplio de longitudes de onda, un cono aislado no puede saber exactamente qué luz lo ha estimulado: distintas combinaciones de longitudes de onda pueden producir en él una respuesta muy parecida. Para obtener información sobre el color, nuestro sistema visual necesita comparar las respuestas de los distintos tipos de conos.
+A partir de ahí construye una señal cromática que continúa su viaje por la retina, el tálamo y las distintas áreas visuales del cerebro &lt;a class="nn-cite" href="#ref-3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En las primeras etapas de este proceso aparecen mecanismos de oposición cromática que comparan la actividad de distintos conos. Hay canales que, de forma simplificada, enfrentan señales asociadas a longitudes de onda largas y medias, y otros que comparan las respuestas de las señales de onda corta con combinaciones de las demás. Por eso la historia del color no es&amp;nbsp;simplemente:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;luz → retina →&amp;nbsp;color.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Es más&amp;nbsp;bien:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;luz → fotorreceptores → comparaciones → procesamiento neuronal →&amp;nbsp;percepción.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Y entonces vuelve la pregunta. ¿En qué punto de esa cadena aparece el rojo? No parece estar en la pared. No está en la luz como una propiedad independiente de cualquier observador. Pero tampoco podemos señalar una neurona concreta y decir: “ahí está el rojo”. El rojo aparece como una experiencia de todo un&amp;nbsp;sistema.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="los-colores-que-no-estan-en-el-arcoiris"&gt;Los colores que no están en el arcoíris&lt;a class="headerlink" href="#los-colores-que-no-estan-en-el-arcoiris" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Aquí hay otra pequeña trampa. Si pienso en los colores que encontramos en un arcoíris, puedo asociarlos aproximadamente con distintas regiones del espectro&amp;nbsp;visible.&lt;/p&gt;
+&lt;div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; text-align: center; margin: 20px 0;"&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Rojo&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: red; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Naranja&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: orange; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Amarillo&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: yellow; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Verde&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: green; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Azul&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: blue; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;div&gt;Violeta&lt;/div&gt;
+    &lt;div style="width: 36px; height: 36px; background: violet; border-radius: 6px; margin: 6px auto 0;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Pero no todos los colores que experimentamos corresponden a una longitud de onda única. El magenta es un ejemplo de ello. No existe una longitud de onda única que sea “magenta”. Podemos producir una percepción magenta combinando luz de regiones distintas del espectro, aunque no exista ninguna radiación monocromática equivalente a ese color. Y no es el único caso. Tampoco existe una longitud de onda que sea “blanca”, “gris” o “marrón”. Podemos percibir todos esos colores, pero ninguno de ellos puede identificarse directamente con una longitud de onda&amp;nbsp;concreta.&lt;/p&gt;
+&lt;p&gt;Así que, si una longitud de onda no es un color, ¿qué es entonces el color? Esto ya debería hacer que la palabra “color” nos resulte un poco sospechosa. Un espectro físico es una cosa medible. El espacio de colores que construimos a partir de él es otra.
+Y la ciencia del color lleva más de un siglo intentando relacionar a ambos de manera&amp;nbsp;cuantitativa.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="la-pared-cambia-de-color-sin-cambiar"&gt;La pared cambia de color sin cambiar&lt;a class="headerlink" href="#la-pared-cambia-de-color-sin-cambiar" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Si salgo de la casa y vuelvo a mirar la misma pared al atardecer, algo extraño pasa. Ya hablamos de esto en &lt;a href="https://napkinnotes.es/el-atardecer"&gt;un artículo previo sobre el atardecer&lt;/a&gt;. Como la iluminación ha cambiado, la luz del Sol  que nos llega ya no tiene exactamente la misma composición espectral que a mediodía. Si estoy bajo una lámpara, la diferencia puede ser todavía mayor. Sin embargo, la pared continúa pareciéndome roja. No exactamente del mismo rojo, por supuesto. El color puede cambiar, pero normalmente sigo reconociendo la superficie como roja aunque la luz que llega a mis ojos haya cambiado de forma considerable. Eso se llama &lt;strong&gt;constancia del color&lt;/strong&gt;. Nuestro sistema visual intenta estimar qué parte de la señal procede de la iluminación y qué parte está relacionada con las propiedades de la superficie. Para hacerlo utiliza información procedente del conjunto de la escena, adapta la sensibilidad de los receptores y combina las señales en distintas etapas del procesamiento visual &lt;a class="nn-cite" href="#ref-4"&gt;[4]&lt;/a&gt; &lt;a class="nn-cite" href="#ref-5"&gt;[5]&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Esto tiene una consecuencia&amp;nbsp;curiosa:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;El color que percibo no depende simplemente de la luz que llega desde un&amp;nbsp;objeto.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Depende también de lo que hay alrededor, de la iluminación, del contraste, de la adaptación de mis ojos y de la historia visual que mi cerebro tiene detrás. Que te lo digan, si no, a ti, cuando sales como modelo de portada en una foto y como sospechoso habitual de la &lt;span class="caps"&gt;INTERPOL&lt;/span&gt; en la siguiente, con el mismo móvil y cambiando sólo la&amp;nbsp;luz.&lt;/p&gt;
+&lt;p&gt;Una misma superficie puede producir experiencias cromáticas distintas en condiciones diferentes, y nuestra percepción trata constantemente de descubrir qué parte de ese cambio pertenece al objeto y cuál pertenece a la iluminación. Entonces, cuando digo que “la pared es roja”, estoy haciendo una afirmación sobre el mundo. Pero para poder hacerla, mi cerebro ha tenido que realizar una cantidad enorme de trabajo sin que yo me dé cuenta. Quizá, entonces, sea tan solo una afirmación sobre &lt;span class="caps"&gt;MI&lt;/span&gt;&amp;nbsp;mundo.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="ahora-aparece-una-abeja"&gt;Ahora aparece una abeja&lt;a class="headerlink" href="#ahora-aparece-una-abeja" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Volvamos al camino del pueblo. Hay una flor a un lado de la carretera. Yo la miro, tú la miras, y en algún lugar cercano, una abeja también la mira. La flor no ha cambiado, la luz que llega a sus alrededores sigue las mismas leyes físicas, pero la abeja no tiene exactamente nuestro sistema&amp;nbsp;visual.&lt;/p&gt;
+&lt;p&gt;Las abejas pueden detectar radiación ultravioleta, una región del espectro que nuestros ojos no perciben &lt;a class="nn-cite" href="#ref-6"&gt;[6]&lt;/a&gt; &lt;a class="nn-cite" href="#ref-7"&gt;[7]&lt;/a&gt;. Eso significa que una flor que para mí parece simplemente amarilla puede contener para una abeja información adicional que yo no puedo experimentar como color, pero ella sí. Muchas flores presentan patrones en el ultravioleta que pueden ayudar a dirigir a los polinizadores hacia sus recursos. Es una especie de señalización que está literalmente fuera de nuestro rango visual. Y aquí la pregunta empieza a ponerse realmente&amp;nbsp;incómoda.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;¿Qué color tiene la&amp;nbsp;flor?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Para mí, uno; para la abeja, otro. La flor no ha elegido una de las dos respuestas, lo que cambia es el&amp;nbsp;observador.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="no-todas-las-retinas-son-iguales-y-el-curioso-caso-del-animal-de-los-doce-receptores"&gt;No todas las retinas son iguales y el curioso caso del animal de los doce receptores&lt;a class="headerlink" href="#no-todas-las-retinas-son-iguales-y-el-curioso-caso-del-animal-de-los-doce-receptores" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;La abeja no es una excepción dentro del mundo animal. La evolución ha producido sistemas visuales muy distintos. Hay mamíferos con visión dicromática, primates con tricromacia, y vertebrados con cuatro tipos de pigmentos visuales y sistemas cromáticos mucho más ricos que el nuestro. En distintos grupos de animales aparecen sensibilidades espectrales ajustadas a los ambientes y problemas ecológicos de cada especie &lt;a class="nn-cite" href="#ref-8"&gt;[8]&lt;/a&gt;. Algunas aves, por ejemplo, poseen sistemas visuales tetracromáticos y pueden utilizar sensibilidad al ultravioleta o al violeta para extraer información que nosotros no vemos&amp;nbsp;directamente. &lt;/p&gt;
+&lt;p&gt;Aquí conviene evitar una frase demasiado tentadora: “Las aves ven cuatro veces más colores que nosotros.” No, el número de tipos de fotorreceptores no se traduce de manera tan sencilla en “número de colores”. Un sistema de visión cromática no es un cajón con cierto número de lápices dentro. Lo importante es qué sensibilidades tiene, cómo se combinan, qué circuitos neuronales existen, qué información necesita el animal y cómo todo eso se integra con el resto del sistema&amp;nbsp;visual.&lt;/p&gt;
+&lt;p&gt;Si buscamos un ejemplo verdaderamente extraño, podemos mirar al fondo del mar. Algunas especies de estomatópodos, los llamados camarones mantis, poseen hasta doce tipos de fotorreceptores espectrales, con sensibilidades que van desde el ultravioleta profundo hasta el rojo &lt;a class="nn-cite" href="#ref-9"&gt;[9]&lt;/a&gt;. Sin embargo, los experimentos muestran que no distinguen pequeñas diferencias de longitud de onda con una precisión extraordinaria. Su sistema parece utilizar una estrategia distinta a la nuestra para reconocer los colores. Así que la lección es bastante clara: &lt;strong&gt;tener más receptores no significa simplemente ver más colores.&lt;/strong&gt; La retina es solo una parte de una máquina mucho más&amp;nbsp;grande.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="quiza-cada-uno-vea-un-mundo-ligeramente-distinto"&gt;Quizá cada uno vea un mundo ligeramente distinto&lt;a class="headerlink" href="#quiza-cada-uno-vea-un-mundo-ligeramente-distinto" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Ni siquiera hace falta irnos a una abeja o a un camarón de doce receptores. Podemos quedarnos aquí, conmigo, contigo, con cualquiera que esté leyendo&amp;nbsp;esto.&lt;/p&gt;
+&lt;p&gt;Incluso entre seres humanos con visión cromática normal existen diferencias en la percepción del color. Las curvas de sensibilidad de nuestros conos no son idénticas, su distribución en la retina puede variar y nuestra experiencia visual está influida por la adaptación y por otros mecanismos del sistema nervioso &lt;a class="nn-cite" href="#ref-10"&gt;[10]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Luego están las distintas formas de deficiencia de visión cromática. Una persona puede carecer de una de las señales que yo utilizo para distinguir determinados colores y, por tanto, organizar una parte del espacio cromático de una manera diferente.
+No es simplemente que vea el mundo “en menos colores”, ve el mundo con otro sistema de medición. Esto me lleva a una idea que me parece bastante extraña. Cuando tú y yo miramos una manzana, podemos estar de acuerdo en llamarla roja, podemos elegir la misma pintura para pintar una pared, podemos pasar un examen de visión y coincidir en nuestras respuestas. Podemos incluso describir de forma muy parecida todo lo que ocurre físicamente, pero hay algo que no podemos comprobar directamente: No podemos comparar mi experiencia del rojo con la tuya. Quizá lo ves como yo veo el verde, pero desde pequeño aprendiste a llamar “rojo” a esa sensación porque así aparecía escrito en las pegatinas de colores del colegio de&amp;nbsp;infantil.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="el-experimento-del-espectro-invertido"&gt;El experimento del espectro invertido&lt;a class="headerlink" href="#el-experimento-del-espectro-invertido" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Aquí es donde la física empieza a rozar la filosofía.
+Imaginemos algo imposible.
+Supongamos que un día despierto y descubro que, de alguna manera, todas mis experiencias cromáticas se han intercambiado internamente.
+Lo que antes experimentaba como rojo ahora se siente como lo que antes experimentaba como verde.
+Pero hay una condición importante: todo lo demás permanece exactamente igual.
+Mis palabras no cambian.
+Mi memoria no cambia.
+Mis asociaciones no cambian.
+Si antes decía que una manzana era roja, sigo diciendo que es roja.
+Si me preguntas de qué color es un semáforo, respondo correctamente.
+Si me enseñas dos objetos que antes distinguía, sigo distinguiéndolos.
+Desde fuera, no notarías nada.
+El experimento mental del &lt;strong&gt;espectro invertido&lt;/strong&gt; intenta precisamente poner sobre la mesa esta posibilidad: que dos personas pudieran tener experiencias fenomenales diferentes aunque sus disposiciones de comportamiento y sus respuestas a los estímulos fueran las mismas. Es uno de los clásicos problemas filosóficos sobre la relación entre el color y la experiencia consciente &lt;a class="nn-cite" href="#ref-11"&gt;[11]&lt;/a&gt;.
+No sabemos si un caso así es físicamente realizable de la forma ingenua en que se imagina.
+De hecho, el experimento tiene muchas dificultades cuando intentamos convertirlo en una hipótesis científica concreta.
+Pero sirve para señalar una cosa.
+Hay una diferencia entre &lt;strong&gt;saber qué estímulo recibe un observador&lt;/strong&gt; y &lt;strong&gt;saber cómo se siente ese estímulo para él&lt;/strong&gt;.
+Y esa diferencia es exactamente la que llevamos persiguiendo desde el&amp;nbsp;principio.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="entonces-existe-el-color"&gt;Entonces, ¿existe el color?&lt;a class="headerlink" href="#entonces-existe-el-color" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Después de todo este viaje, sería muy tentador dar una respuesta contundente.
+Podría&amp;nbsp;decir:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Los colores no existen. Solo son una ilusión del&amp;nbsp;cerebro.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pero no estoy seguro de que eso esté bien.
+Porque una ilusión también es algo que ocurre. De ilusiones se vive que dice&amp;nbsp;aquel.&lt;/p&gt;
+&lt;p&gt;El rojo que experimento cuando miro una amapola no es una propiedad fundamental de la radiación electromagnética. Pero mi experiencia de rojo es real como experiencia. Está producida por un sistema físico real: mis ojos, mis neuronas y mi cerebro. Que una propiedad dependa de un observador no significa necesariamente que sea&amp;nbsp;falsa.&lt;/p&gt;
+&lt;p&gt;Cuando vuelvo a pensar en aquella aldea serrana, la escena inicial ya no me parece tan sencilla.
+Las casas siguen siendo grises, los tejados siguen cubiertos de pizarra, los árboles siguen siendo verdes, el cielo sigue siendo azul. Eso no ha cambiado.
+Lo que ha cambiado es la pregunta con la que los&amp;nbsp;miro.&lt;/p&gt;
+&lt;p&gt;Ahora sé que la luz que llega desde esas montañas puede describirse con un espectro y que las superficies tienen propiedades físicas que determinan cómo absorben, reflejan y dispersan esa luz. Sé que mis tres tipos principales de conos convierten esa radiación en señales nerviosas, y que la retina y el cerebro comparan esas señales y las transforman muchas veces antes de que yo tenga la experiencia consciente de estar viendo una cosa roja, verde o azul.
+Sé que una abeja puede acceder a información ultravioleta que para mí no existe como experiencia visual. Sé que un ave puede tener un sistema cromático distinto. Sé que un camarón mantis puede tener doce clases de fotorreceptores y, sin embargo, no ver simplemente “cuatro veces más colores”. Y sé que todo esto todavía no me permite responder la pregunta con que empezó esta&amp;nbsp;historia.&lt;/p&gt;
+&lt;p&gt;Porque puedo describir con una precisión extraordinaria &lt;strong&gt;qué ocurre en el mundo cuando miro una flor&lt;/strong&gt;, pero cuando cierro los ojos, no puedo mirar dentro de tu cabeza para comprobar si el rojo que tú experimentas es exactamente el mismo rojo que experimento yo. Y entonces vuelvo a ese lugar entre&amp;nbsp;montañas.&lt;/p&gt;
+&lt;p&gt;Cuando nadie está mirando las casas continúan allí, la montaña continúa allí, la luz continúa viajando aunque no haya ojos para recibirla. Todo eso puede existir sin nosotros. Pero el rojo&amp;#8230;, el rojo necesita algo más. Necesita un sistema capaz de convertir toda esa física en una&amp;nbsp;experiencia.&lt;/p&gt;
+&lt;p&gt;Así que quizá la pregunta del principio no tenga una respuesta sencilla.
+Quizá el mundo, cuando nadie lo mira, no sea rojo, ni verde, ni azul.
+Quizá solo haya luz, materia y radiación.
+Y quizá los colores aparezcan cuando todo eso encuentra unos ojos capaces de verlos, los tuyos, por&amp;nbsp;ejemplo.&lt;/p&gt;
+&lt;p&gt;La próxima vez que mires una pared roja, una flor o el cielo al atardecer, quizá merezca la pena detenerse un instante.
+No para saber de qué color es, sino para&amp;nbsp;preguntarte:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;¿De qué color es el mundo cuando nadie lo está&amp;nbsp;mirando?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id="referencias"&gt;Referencias&lt;a class="headerlink" href="#referencias" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;
+  &lt;strong&gt;Imagen de portada:&lt;/strong&gt;
+  Luis Daniel Carbia Cabeza,
+  &lt;a href="https://commons.wikimedia.org/wiki/File:La_Alberca_-_Plaza_Mayor_reviewed.jpg" target="_blank" rel="noopener noreferrer"&gt;&lt;em&gt;La Alberca - Plaza Mayor reviewed&lt;/em&gt;&lt;/a&gt;,
+  Wikimedia Commons,
+  &lt;a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer"&gt;&lt;span class="caps"&gt;CC&lt;/span&gt; &lt;span class="caps"&gt;BY&lt;/span&gt; 2.0&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;ol class="nn-references"&gt;
+  &lt;li id="ref-1"&gt;
+    Portal de Turismo de Castilla y León. &lt;em&gt;La Alberca&lt;/em&gt;. Junta de Castilla y León.
+    &lt;a href="https://www.turismocastillayleon.com/es/patrimonio-cultura/alberca" target="_blank" rel="noopener noreferrer"&gt;https://www.turismocastillayleon.com/es/patrimonio-cultura/alberca&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-2"&gt;
+    Solomon, S. G., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Lennie, P. (2007). The machinery of colour vision. &lt;em&gt;Nature Reviews Neuroscience&lt;/em&gt;, 8, 276–286.
+    &lt;a href="https://doi.org/10.1038/nrn2094" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1038/nrn2094&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-3"&gt;
+    Gegenfurtner, &lt;span class="caps"&gt;K. R.&lt;/span&gt;(2003). Cortical mechanisms of colour vision. &lt;em&gt;Nature Reviews Neuroscience&lt;/em&gt;, 4, 563–572.
+    &lt;a href="https://doi.org/10.1038/nrn1138" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1038/nrn1138&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-4"&gt;
+    Foster, &lt;span class="caps"&gt;D. H.&lt;/span&gt;(2003). Does colour constancy exist? &lt;em&gt;Trends in Cognitive Sciences&lt;/em&gt;, 7(10), 439–443.
+    &lt;a href="https://personalpages.manchester.ac.uk/staff/d.h.foster/Research/My_PDFs/Foster_TiCS_03.pdf" target="_blank" rel="noopener noreferrer"&gt;https://personalpages.manchester.ac.uk/staff/d.h.foster/Research/My_PDFs/Foster_TiCS_03.pdf&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-5"&gt;
+   Smithson, &lt;span class="caps"&gt;H. E.&lt;/span&gt;(2005). Sensory, computational and cognitive components of colour constancy. &lt;em&gt;Philosophical Transactions of the Royal Society B&lt;/em&gt;, 363, 1963–1981.
+    &lt;a href="https://doi.org/10.1098/rstb.2005.1633" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1098/rstb.2005.1633&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-6"&gt;
+    Lunau, K., Camargo, &lt;span class="caps"&gt;M. G.&lt;/span&gt; G., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Ren, Z.-X. (2025). Bees, flowers and &lt;span class="caps"&gt;UV&lt;/span&gt;. &lt;em&gt;Plant Biology&lt;/em&gt;, 27(6), 948–961..
+    &lt;a href="https://doi.org/10.1111/plb.70050" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1111/plb.70050&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-7"&gt;
+    Hempel de Ibarra, N., Vorobyev, M., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Menzel, R. (2014). Mechanisms, functions and ecology of colour vision in the honeybee. &lt;em&gt;Journal of Comparative Physiology A&lt;/em&gt;, 200, 411–433.
+    &lt;a href="https://doi.org/10.1007/s00359-014-0915-1" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1007/s00359-014-0915-1&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-8"&gt;
+    Marshall, J. N., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Arikawa, K. (2014). Unconventional colour vision. &lt;em&gt;Current Biology&lt;/em&gt;, 24(24), R1150–R1154.
+    &lt;a href="https://doi.org/10.1016/j.cub.2014.10.025" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1016/j.cub.2014.10.025&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-9"&gt;
+    Thoen, H. H., How, M. J., Chiou, T.-H., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Marshall, J. (2014). A different form of color vision in mantis shrimp. &lt;em&gt;Science&lt;/em&gt;, 343(6169), 411–413.
+    &lt;a href="https://doi.org/10.1126/science.1245824" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1126/science.1245824&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-10"&gt;
+    Bosten, &lt;span class="caps"&gt;J. M.&lt;/span&gt;(2022). Do You See What I See? Diversity in Human Color Perception. &lt;em&gt;Annual Review of Vision Science&lt;/em&gt;, 8, 101–133.
+    &lt;a href="https://doi.org/10.1146/annurev-vision-093020-112820" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.1146/annurev-vision-093020-112820&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li id="ref-11"&gt;
+    Shoemaker, S. (1982). The Inverted Spectrum. &lt;em&gt;The Journal of Philosophy&lt;/em&gt;, 79(7), 357–381.
+    &lt;a href="https://doi.org/10.2307/2026213" target="_blank" rel="noopener noreferrer"&gt;https://doi.org/10.2307/2026213&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Física"/><category term="color"/><category term="luz"/><category term="óptica"/><category term="visión"/><category term="neurociencia"/><category term="filosofía"/></entry><entry><title>Un vikingo en Marte</title><link href="https://napkinnotes.es/un-vikingo-en-marte" rel="alternate"/><published>2026-09-03T00:00:00+02:00</published><updated>2026-09-03T00:00:00+02:00</updated><author><name>Duvier Suárez Fontanella</name></author><id>tag:napkinnotes.es,2026-09-03:/un-vikingo-en-marte</id><summary type="html">&lt;p&gt;Hace cincuenta años, el 3 de septiembre de 1976, la &lt;span class="caps"&gt;NASA&lt;/span&gt; lanzó la Viking 2, la segunda de dos sondas destinadas a estudiar la composición de la atmósfera marciana. Hoy, en Napkin Notes, te explicamos el proceso que utilizaron la misiones Viking para amartizar sus sondas y sobrevivir a una atmósfera capaz de calentar una nave brutalmente, pero incapaz de frenarla por sí&amp;nbsp;sola.&lt;/p&gt;</summary><content type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#una-breve-introduccion"&gt;Una breve&amp;nbsp;introducción&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#el-desafio-del-amartizaje"&gt;El desafío del&amp;nbsp;amartizaje&lt;/a&gt;&lt;/li&gt;
