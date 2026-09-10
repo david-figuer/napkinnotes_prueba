@@ -13,7 +13,7 @@ tags:
   - visión
   - neurociencia
   - filosofía
-summary: "Si nadie está mirando, ¿tiene color el mundo? Dicho de otra forma, ¿dónde aparece realmente el color? o ¿es una propiedad de la naturaleza o simplemente parte de nuestra percepción?"
+summary: "Si nadie está mirando, ¿tiene color el mundo? Dicho de otra forma, ¿dónde aparece realmente el color o es una propiedad de la naturaleza o simplemente parte de nuestra percepción?"
 image: images/La_Alberca_-_Plaza_Mayor_reviewed.jpeg
 ---
 
@@ -56,7 +56,7 @@ $$
 
 al menos en el caso simplificado de una superficie iluminada, donde $E(\lambda)$ representa la distribución espectral de la iluminación, es decir, cómo se reparte la energía de la luz entre las distintas longitudes de onda, y $R(\lambda)$ la reflectancia espectral de la superficie.
 
-La luz que llega hasta nuestros ojos es el resultado de esa combinación, con $\lambda =$ 650 nm en le caso del rojo. Pero 650 nm es una longitud de onda, no una experiencia. La diferencia parece pequeña cuando la escribimos así, pero es enorme, porque ahora hemos separado dos cosas que solemos tratar como si fueran la misma:
+La luz que llega hasta nuestros ojos es el resultado de esa combinación, con $\lambda =$ 650 nm en el caso del rojo. Pero 650 nm es una longitud de onda, no una experiencia. La diferencia parece pequeña cuando la escribimos así, pero es enorme, porque ahora hemos separado dos cosas que solemos tratar como si fueran la misma:
 
   1. La descripción física de un estímulo.
   2. La experiencia que ese estímulo produce en nosotros.
