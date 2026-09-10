@@ -3,8 +3,7 @@ title: "¿De qué color es el mundo cuando nadie lo está mirando?"
 author: David Figueruelo Hernán
 date: 2026-09-10
 layout: articles
-slug: prueba-david
-status: hidden
+status: published
 category: Física
 tags:
   - color
